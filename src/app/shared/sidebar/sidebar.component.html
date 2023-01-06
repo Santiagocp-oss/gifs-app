@@ -4,11 +4,12 @@
     </h3>
     <hr class="text-white">
     <div id="grubt" class="btn-group-vertical p-2" role="group" aria-label="Vertical button group">
-      <button type="button" class="btn btn-light" href="#" style="border-color: lightgray">Dashboard</button>
-      <button type="button" class="btn btn-light" href="#" style="border-color: lightgray">Dashboard</button>
-      <button type="button" class="btn btn-light" href="#" style="border-color: lightgray">Dashboard</button>
-      <button type="button" class="btn btn-light" href="#" style="border-color: lightgray">Dashboard</button>
-      <button type="button" class="btn btn-light" href="#" style="border-color: lightgray">Dashboard</button>
-      <button type="button" class="btn btn-light" href="#" style="border-color: lightgray">Dashboard</button>
+      <button *ngFor="let item of historial" 
+      type="button" 
+      class="btn btn-light" 
+      href="#" 
+      style="border-color: lightgray">
+      {{item | titlecase }}
+    </button>
     </div>
   </div> 

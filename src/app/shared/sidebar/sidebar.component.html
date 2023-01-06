@@ -5,6 +5,7 @@
     <hr class="text-white">
     <div id="grubt" class="btn-group-vertical p-2" role="group" aria-label="Vertical button group">
       <button *ngFor="let item of historial" 
+      (click)="buscar(item)"
       type="button" 
       class="btn btn-light" 
       href="#" 
